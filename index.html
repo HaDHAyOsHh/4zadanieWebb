@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <title>siteee</title>
+
+</head>
+<body>
+  <header class="p-2">
+    <div class="container-lg">
+      <img class="mr-2" src="log.jpg" alt="Logo" style="width: 100px; height: 100px" />
+      <h1 class="header">4Web</h1>
+    </div>
+  </header>
+  <nav class="container-lg mx-auto">
+    <ul class="row">
+      <li class="col-12 col-lg m-2" ><a href="#links">Ссылки</a></li>
+      <li class="col-12 col-lg  m-2" ><a href="#table">Таблица</a></li>
+      <li class="col-12 col-lg  m-2" ><a href="#form">Форма</a></li>
+      <li class="col-12 col-lg m-2" ><a href="#head4">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="container-lg m-auto">
+    <div class="row row-cols-1">
+      <section id="links" class="col py-3 px-2 px-lg-4 my-2">
+        
+        <ol>
+          <li><a href="http://example.com/" >ссылка на главную страницу сайта example.com</a></li>
+          <li><a href="https://example.com/" >ссылка на главную страницу сайта example.com</a></li>
+          <li><a href="ftp://<Логин>:<Пароль>@webstr.ru/tempo/file.txt  " >ссылка на файл на сервере FTP без авторизации </a></li>
+          <li><a href="ftp://user:password@example.com/myfile.zip">Ссылка на файл на сервере FTP с авторизацией</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Message_format">Ссылка на фрагмент страницы некоторого сайта</a></li>
+          <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+          
+          <li> Cписок ссылок основной навигации сайта с подписями title <br />
+            <ol>
+              <li><a href="#links">Ссылки</a></li>
+              <li><a href="#table">Таблица</a></li>
+              <li><a href="#form">Форма</a></li>
+            </ol>
+          </li>
+          <li><a>Ссылка без href</a></li>
+          <li><a href="">Ссылка с пустым href</a></li>
+          <li><a href="http://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+          <li>
+            <a href="http://example.com/">Ссылка, запрещенная для индексации поисковиками</a>
+          </li>
+          <li>Lтекст текст текст<a href="https://example.com/  " >контекстную в тексте абзаца  </a>тексттекст
+          </li>
+          <li>
+            <a href="http://google.com/">
+              <img src="f7E7eOVpHV.jpg" width="150"
+   height="150" alt=""></a>
+
+          </li>
+          <li><img src="un.jpg" width="150" height="75" usemap="#Navigation" alt="">
+        <map id="Navigation" name="Navigation">
+          <area shape="rect" coords="150,18,250,120" href="inform.html" alt="">
+		      <area shape="circle" coords="68,67,50" href="inform.html" alt="">
+	      </map></li>
+
+          <li><a href="./page1.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+          <li><a href="./about/page2.html">Относительная на страницу в каталоге about</a></li>
+          <li><a href="../page3.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+          <li><a href="../../page4.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+          <li><a href="/">Сокращенная ссылка на главную</a></li>
+          <li><a href="/page1.html">Сокращенная ссылка на внутреннюю</a></li>
+        </ol>
+      </section>
+      <section id="table" class="col py-3 px-2 px-lg-4 my-2 mx-auto order-1 order-lg-0">
+        <h2>Таблица</h2>
+        <table class="mx-auto">
+          <tr>
+            <th class="p-1 p-sm-2">Колонка 1</th>
+            <th class="p-1 p-sm-2">Колонка 2</th>
+            <th class="p-1 p-sm-2">Колонка 3</th>
+            <th class="p-1 p-sm-2">Колонка 4</th>
+          </tr>
+          <tr>
+            <td class="p-1 p-sm-2">Ячейка 1</td>
+            <td class="p-1 p-sm-2">Ячейка 2</td>
+            <td class="p-1 p-sm-2">Ячейка 3</td>
+            <td class="p-1 p-sm-2" rowspan="2">Ячейка<br />7</td>
+          </tr>
+          <tr>
+            <td class="p-1 p-sm-2">Ячейка 4</td>
+            <td class="p-1 p-sm-2">Ячейка 5</td>
+            <td class="p-1 p-sm-2">Ячейка 6</td>
+          </tr>
+					<tr>
+						<td class="p-1 p-sm-2">Ячейка 8</td>
+						<td class="p-1 p-sm-2">Ячейка 9</td>
+						<td class="p-1 p-sm-2">Ячейка 10</td>
+						<td class="p-1 p-sm-2">Ячейка 11</td>
+					</tr>
+
+        </table>
+      </section>
+      <section id="form" class="col py-3 px-2 px-lg-4 my-2">
+        <h2>Форма</h2>
+        <form action="URL_отправки_данных"
+          method="POST">
+          <label>
+            Имя<br />
+            <input name="name"/>
+          </label><br />
+
+          <label>
+            E-mail:<br />
+            <input name="email"
+              value="test@example.com"
+              type="email" />
+          </label><br />
+
+          <label>
+            Дата рождения:<br />
+            <input name="field-date"
+              value="1970-01-01"
+              type="date" />
+          </label><br />
+
+          Пол:<br />
+          <label><input type="radio" checked="checked"
+            name="gender" value="male" />
+            М
+          </label>
+          <label><input type="radio"
+            name="gender" value="female" />
+            Ж
+          </label>
+          <br />
+
+          Количество конечностей:<br />
+          <label><input type="radio"
+            name="limbs" value="0" />
+            0
+          </label>
+          <label><input type="radio"
+            name="limbs" value="1" />
+            1
+          </label>
+          <label><input type="radio"
+            name="limbs" value="2" />
+            2
+          </label>
+          <label><input type="radio"
+            name="limbs" value="3" />
+            3
+          </label>
+          <label><input type="radio" checked="checked"
+            name="limbs" value="4" />
+            4
+          </label>
+          <br />
+
+          <label>
+            Сверхспособности:
+            <br />
+            <select name="superpowers[]"
+              multiple="multiple">
+              <option value="immortality">Бессмертие</option>
+              <option value="going_through_walls" selected="selected">Прохождение сквозь стены</option>
+              <option value="leviatation" selected="selected">Левитация</option>
+            </select>
+          </label><br />
+
+          <label>
+            Биография:<br />
+            <textarea name="biography">Введите текст</textarea>
+          </label><br />
+
+          <br />
+          <label><input type="checkbox"
+            name="contract" />
+            С контрактом ознакомлен
+          </label><br />
+
+          <input id="submit" type="submit" value="Отправить" />
+        </form>
+      </section>
+    </div>
+  </div>
+  <footer class="px-5 py-2">
+    (© Fyodorov Kirill 2021
+  </footer>
+</body>
+</html>
